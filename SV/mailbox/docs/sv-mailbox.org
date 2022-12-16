@@ -1,0 +1,27 @@
+#+TITLE: SV Mailbox
+
+* Mailbox definition
+
+Mailbox in SV works as sort of a queue. It is nearly identical with the
+Rust's ~oneshot~ channel.
+
+Methods:
+- ~new()~
+- ~num()~
+- ~put()~
+- ~try_put()~
+- ~get()~
+- ~try_get()~
+- ~peek()~
+- ~try_peek()~
+
+Mailbox can be pass by reference, they are by default dynamically typed, but
+parametrization using a static type is possible as show in ~paramterized.sv~
+example.
+
+The examples shown are from [fn:chipverify_mailbox].
+
+
+* References
+
+[fn:chipverify_mailbox] https://www.chipverify.com/systemverilog/systemverilog-mailbox
