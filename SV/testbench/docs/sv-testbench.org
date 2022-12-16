@@ -18,5 +18,11 @@ package <package_name>
 endpackage
 #+end_src
 
+** Generator
+Another testbench for simple ~switch~ example shows how a generator can be
+used as in [fn
+
+
 * References
 [fn:chipverify_sv_tb] https://www.chipverify.com/systemverilog/systemverilog-testbench-example-1
+[fn:chipverify_sv_tb_gen] https://www.chipverify.com/systemverilog/systemverilog-testbench-example-2
