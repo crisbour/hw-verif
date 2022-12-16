@@ -7,12 +7,10 @@ puts {
 # for each new project. There should be no need to
 # modify the rest of the script.
 
-set top_tb ::env(TOP_TB)
+set top_tb $env(TOP_TB)
+puts "The top testbench is $top_tb"
 
-set library_file_list {
-                           design_library {}
-                           test_library  { $top_tb } 
-}
+set library_file_list "test_library { $top_tb }"
 set top_level              test_library.tb
 set wave_patterns {}
 set wave_radices {
