@@ -1,0 +1,22 @@
+#+TITLE: SystemVerilog Testbench
+
+* Testbench example :ATTACH:
+This is the example from [fn:chipverify_sv_tb]. It makes use of the testing architecture of using:
+- Generator
+- Driver
+- Monitor
+- Scoreboard
+
+[[./simple-testbench.png]]
+
+** TODO Import classes
+Atm all required resources are put together in ~testbenches_pkg.sv~ as a SV package, however it would be desirable to import classes based on where they are requiered. I have tried to ~include~ classes to resolve dependencies, however I end up with multi definition problems. In order to use import which would solve this problem, it is required to wrap everything in:
+#+begin_src SystemVerilog
+package <package_name>
+  class <class_name>
+  endclass
+endpackage
+#+end_src
+
+* References
+[fn:chipverify_sv_tb] https://www.chipverify.com/systemverilog/systemverilog-testbench-example-1
