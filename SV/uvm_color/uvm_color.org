@@ -1,0 +1,8 @@
+#+title: UVM Color
+
+* Colored display
+
+This testbench displayes colored messaged on stdout, using the example provided at [fn:uvm_color_siemens]
+
+* References
+[fn:uvm_color_siemens] [[https://verificationacademy.com/forums/downloads/color-all-messages-coming-specific-uvmenv-your-testbench][Verification Academy Forum: UVM Colored prints]]

@@ -1,0 +1,24 @@
+Description:
+********
+
+This tiny package can be used to color all messages coming from a specific uvm_env and all components instantiated under it.
+
+To use it, you have to inherit your environment from "uvm_colors::colored_env" which extends "uvm_pkg::uvm_env". This environment has two configuration parameters:
+
+font_color - used to set the font color of the message
+bg_color - used to set the background color of the message
+
+The implementation is based on message callback. If you don't want to inherit all your envs from colored_env, you can easily copy the contents into your own classes.
+
+
+To run:
+********
+
+To see an example of how it works:
+
+make all
+
+Feedback:
+********
+avidan_efody@mentor.com
+
