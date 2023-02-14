@@ -1,0 +1,3 @@
+[submodule "svdpi_oxide"]
+	path = svdpi_oxide
+	url = https://github.com/crisbour/svdpi_oxide
